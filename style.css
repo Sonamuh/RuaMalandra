@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .banner {
+    position: fixed;
+    top: 2.2rem;
+    height: 3rem;
+    background-color: white;
+    width: 100%;
+  }
+
+  .button {
+    position: sticky;
+    top: 2.145rem;
+    height: 3rem;
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 25px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .b-1 {
+    left: 0%;
+  }
+  .b-2 {
+    left: 25%;
+  }
+  .b-3 {
+    left: 50%;
+  }
+  .b-4 {
+    left: 75%;
+  }
+  
+  
+  details {
+    width: 100%;
+    margin: auto;
+  }
+  .content {
+    padding: 10px 10px 40px 10px;
+    border-top: none;
+    display: flex;
+    font-size: 1.05rem;
+    line-height: 1.525rem;
+    background-color: rgb(250, 250, 250);
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  p {
+    margin: 0;
+    padding-bottom: 10px;
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  .event {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+
+    font-size: 1.2rem;
+    background-color: rgb(250, 250, 250);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.event:hover {
+  background-color: PaleTurquoise;
+}
+
+.col {
+    box-sizing: border-box;
+}
+
+.col-60 {
+    flex: 0 0 50%;
+}
+
+.col-20 {
+    text-align: right;
+    flex: 0 0 25%;
+}
+.custom-line {
+    width: 100%;
+    height: 1px; 
+    background-color: gray;
+    border: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+  }
+
+
+
+/* CABEÇALHO */
+ 
+.page_header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 2.2rem;
+  }
+
+            /* COLUNA ESQUERDA */
+
+            .col-70 img {
+              max-height: 2rem;
+              padding-right: 0.5rem;
+            }
+
+            .col-70 {
+              background-color: white;
+              padding-left: 1rem;
+              justify-content: left;
+              flex: 0 0 70%;
+              border: 1px solid gray;
+              border-radius: 25px;
+              display: flex; 
+              align-items: center; 
+              cursor: pointer;
+          }
+
+            /* COLUNAS DIREITA */    
+
+            .col-10 {
+                background-color: white;
+                justify-content: center;
+                flex: 0 0 10%;
+                border: 1px solid gray;
+                border-radius: 25px;
+                display: flex; 
+                align-items: center; 
+                cursor: pointer;
+                color: black;
+            }
+
+            .col-10:hover {
+              background-color: gray;
+              color: #f8f9fa;
+              font-weight: 600;
+            }
+
+/* FIM DO CABEÇALHO */
+
+
+
+
+
+.mes {
+    background-color: rgb(250, 250, 250);
+    position: sticky;
+    top: 5.1rem;
+    font-size: 2rem;
+    justify-content: center;
+    flex: 0 0 15%;
+    border: 1px solid gray;
+    border-radius: 25px;
+    display: flex; 
+    align-items: center; 
+    height: 3rem;
+    margin-bottom: -1px;
+}
+
+#fev {
+    background-color: lightblue;
+}
+#marco {
+    background-color: lightgreen;
+}
+
+.space_tempo {
+    width: 100%;
+    height: 500px;
+}
+
+
+.cookie-popup {
+  position: fixed;
+  height: 2rem;
+  bottom: 0;
+  width: calc(100% - 20px); /* Evita que fique colado nas bordas */
+  background-color: #f8f9fa;
+  border: 1px solid gray;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  z-index: 2;
+}
+
+.cookie-popup .text {
+  width: 90%;
+  text-align: left;
+}
+
+.cookie-popup button {
+  width: 10%;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cookie-popup button:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.cookie-popup.hidden {
+  display: none;
+}
+
+
+/* ANIMAÇÃO BANCO */
+ 
+.flier {
+	pointer-events: none;
+}
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+  height: 300px;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+/* ANIMAÇÃO TIJELA */
+
+.flier_tijela {
+	pointer-events: none;
+}
+.flier_tijela > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly_chinese 50s linear infinite;
+        pointer-events: none !important;
+  height: 400px;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+@keyframes fly_chinese {
+	0%, 19% {
+		display: none; /* Começa "fora do radar" */
+		transform: translateX(120vw) translateY(120vh) rotateZ(0deg);
+	}
+
+	20% {
+		display: block; /* Entra em cena */
+		transform: translateX(100vw) translateY(80vh) rotateZ(45deg);
+	}
+
+	35% {
+		transform: translateX(60vw) translateY(40vh) rotateZ(90deg);
+	}
+
+	50% {
+		transform: translateX(20vw) translateY(-10vh) rotateZ(135deg);
+	}
+
+	65% {
+		transform: translateX(-30vw) translateY(30vh) rotateZ(180deg);
+	}
+
+	80% {
+		transform: translateX(0vw) translateY(80vh) rotateZ(225deg);
+	}
+
+	95% {
+		transform: translateX(50vw) translateY(120vh) rotateZ(270deg);
+	}
+
+	100% {
+		transform: translateX(120vw) translateY(150vh) rotateZ(360deg);
+	}
+}
