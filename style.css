@@ -66,8 +66,8 @@ body {
   }
 
   .button {
-    position: sticky;
-    top: 2.145rem;
+    position: fixed;
+    top: 2.14rem;
     height: 3rem;
     width: 25%;
     border: 1px solid gray;
@@ -287,7 +287,7 @@ details summary::-webkit-details-marker {
 /* Adjust animation duration to change the element’s speed */
         animation: fly 50s linear infinite;
         pointer-events: none !important;
-  height: 300px;
+  height: 200px;
 	top: 0;
 	left: 0;
 	transform: translateX(-120%) translateY(-120%) rotateZ(0);
@@ -340,7 +340,7 @@ details summary::-webkit-details-marker {
 /* Adjust animation duration to change the element’s speed */
         animation: fly_chinese 50s linear infinite;
         pointer-events: none !important;
-  height: 400px;
+  height: 200px;
 	top: 0;
 	left: 0;
 	transform: translateX(-120%) translateY(-120%) rotateZ(0);
@@ -382,4 +382,28 @@ details summary::-webkit-details-marker {
 	100% {
 		transform: translateX(120vw) translateY(150vh) rotateZ(360deg);
 	}
+}
+
+
+
+
+
+/* CSS RESIDÊNCIAS */
+/* CSS RESIDÊNCIAS */
+/* CSS RESIDÊNCIAS */
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
 }
