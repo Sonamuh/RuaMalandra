@@ -57,6 +57,59 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
+
+
+
+/* CABEÇALHO */
+ 
+.page_header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: 2.2rem;
+}
+
+          /* COLUNA ESQUERDA */
+
+          .col-70 img {
+            max-height: 2rem;
+            padding-right: 0.5rem;
+          }
+
+          .col-70 {
+            background-color: white;
+            padding-left: 1rem;
+            justify-content: left;
+            flex: 0 0 70%;
+            border: 1px solid gray;
+            border-radius: 25px;
+            display: flex; 
+            align-items: center; 
+            cursor: pointer;
+        }
+
+          /* COLUNAS DIREITA */    
+
+          .col-10 {
+              background-color: white;
+              justify-content: center;
+              flex: 0 0 10%;
+              border: 1px solid gray;
+              border-radius: 25px;
+              display: flex; 
+              align-items: center; 
+              cursor: pointer;
+              color: black;
+          }
+
+          .col-10:hover {
+            background-color: gray;
+            color: #f8f9fa;
+            font-weight: 600;
+          }
+
+
   .banner {
     position: fixed;
     top: 2.2rem;
@@ -69,7 +122,7 @@ body {
     position: fixed;
     top: 2.14rem;
     height: 3rem;
-    width: 25%;
+    width: 33.3333%;
     border: 1px solid gray;
     border-radius: 25px;
     display: flex; 
@@ -83,14 +136,51 @@ body {
     left: 0%;
   }
   .b-2 {
-    left: 25%;
+    left: 33.3333%;
   }
   .b-3 {
-    left: 50%;
+    left: 66.6666%;
   }
-  .b-4 {
-    left: 75%;
+
+.button:hover {
+  background-color: gray;
+  color: #f8f9fa;
+  font-weight: 600;
+}
+
+
+/* FIM DO CABEÇALHO */
+
+@media (max-width: 768px) {
+  .button{
+    width: 100%;
   }
+
+.b-1 {
+  left: auto;
+  top: 2.14rem;
+}
+.b-2 {
+  left: auto;
+  top: 5.05rem;
+}
+.b-3 {
+  top: 8rem;
+  left: auto;
+}
+
+.col-70 {
+  flex: 0 0 30%;
+}
+
+.col-10 {
+  flex: 0 0 23.3333%;
+}
+
+}
+
+
+
   
   
   details {
@@ -152,59 +242,6 @@ body {
 details summary::-webkit-details-marker {
     display:none;
   }
-
-
-
-/* CABEÇALHO */
- 
-.page_header {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    height: 2.2rem;
-  }
-
-            /* COLUNA ESQUERDA */
-
-            .col-70 img {
-              max-height: 2rem;
-              padding-right: 0.5rem;
-            }
-
-            .col-70 {
-              background-color: white;
-              padding-left: 1rem;
-              justify-content: left;
-              flex: 0 0 70%;
-              border: 1px solid gray;
-              border-radius: 25px;
-              display: flex; 
-              align-items: center; 
-              cursor: pointer;
-          }
-
-            /* COLUNAS DIREITA */    
-
-            .col-10 {
-                background-color: white;
-                justify-content: center;
-                flex: 0 0 10%;
-                border: 1px solid gray;
-                border-radius: 25px;
-                display: flex; 
-                align-items: center; 
-                cursor: pointer;
-                color: black;
-            }
-
-            .col-10:hover {
-              background-color: gray;
-              color: #f8f9fa;
-              font-weight: 600;
-            }
-
-/* FIM DO CABEÇALHO */
 
 
 
