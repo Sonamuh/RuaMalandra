@@ -57,7 +57,9 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
-
+  .break-point {
+    display: none;
+  }
 
 
 /* CABEÇALHO */
@@ -113,7 +115,7 @@ body {
   .banner {
     position: fixed;
     top: 2.2rem;
-    height: 3rem;
+    height: 1.7rem;
     background-color: white;
     width: 100%;
   }
@@ -169,12 +171,26 @@ body {
   left: auto;
 }
 
+.col-70 img {
+  max-height: 1.8rem;
+  padding-right: 0.2rem;
+}
+
 .col-70 {
-  flex: 0 0 30%;
+  flex: 0 0 46%;
+  padding-left: 0.7rem;
 }
 
 .col-10 {
-  flex: 0 0 23.3333%;
+  flex: 0 0 18%;
+}
+
+.break-point {
+  display: block;
+}
+
+.banner {
+  height: 7.5rem;
 }
 
 }
@@ -215,7 +231,7 @@ body {
 }
 
 .event:hover {
-  background-color: PaleTurquoise;
+  background-color: #C1F1FA;
 }
 
 .col {
@@ -223,13 +239,39 @@ body {
 }
 
 .col-60 {
-    flex: 0 0 50%;
+    flex: 0 0 45%;
+}
+
+.col-7 {
+  text-align: left;
+  flex: 0 0 15%;
 }
 
 .col-20 {
     text-align: right;
-    flex: 0 0 25%;
+    flex: 0 0 20%;
 }
+.col-30 {
+  text-align: right;
+  flex: 0 0 20%;
+}
+
+.col-65 {
+  text-align: left;
+  flex: 0 0 65%;
+}
+
+.col-35 {
+  text-align: right;
+  flex: 0 0 35%;
+}
+
+
+.col-35 img {
+  width: 60%;
+  margin: auto;
+}
+
 .custom-line {
     width: 100%;
     height: 1px; 
@@ -243,9 +285,32 @@ details summary::-webkit-details-marker {
     display:none;
   }
 
+.content h5 {
+  font-size: 0.92rem;
+}
 
+@media (max-width: 768px) {
+  .col-65 {
+    padding: 0.5rem;
+    text-align: left;
+    flex: 0 0 100%;
+  }
+  .col-35 {
+   display: none;
+  }
 
+  .col-30 {
+    display: none;
+  }
 
+  .col-60 {
+    flex: 0 0 60%;
+    margin-left: 5%;
+}
+.col-20 {
+  flex: 0 0 20%;
+}
+}
 
 .mes {
     background-color: rgb(250, 250, 250);
@@ -263,10 +328,18 @@ details summary::-webkit-details-marker {
 }
 
 #fev {
-    background-color: lightblue;
+    background-color: #C1F1FA;
 }
 #marco {
-    background-color: lightgreen;
+    background-color: #C3F1C5;
+}
+
+#abril {
+  background-color: #FFC9DB;
+}
+
+#maio {
+  background-color: #F9FFCB;
 }
 
 .space_tempo {
@@ -443,4 +516,144 @@ details > summary {
 details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
 details > summary::-webkit-details-marker /* Safari */ {
   display: none;
+}
+
+
+/* CSS RESIDÊNCIAS */
+/* CSS RESIDÊNCIAS */
+/* CSS RESIDÊNCIAS */
+
+.res-art {
+  background-color: rgb(250, 250, 250);
+  font-size: 2rem;
+  border: 1px solid gray;
+  border-radius: 25px;
+  display: flex; 
+  align-items: center; 
+  min-height: 3rem;
+  margin-bottom: -1px;
+  line-height: auto;
+}
+
+.res-art p {
+  padding: 1rem 2rem;
+}
+
+#res-a {
+  font-size: 1.5rem;
+}
+
+
+#res-c {
+  background-color: rgb(230, 230, 230);
+}
+
+.res-act {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  margin-bottom: -1px;
+}
+
+.act-texto {
+  flex: 3; /* Ocupa 60% no PC */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box; /* Garante que padding não cause overflow */
+}
+
+.act-texto p {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.act-foto {
+  flex: 2; /* Ocupa 40% no PC */
+  position: relative;
+  overflow: hidden;
+  margin: 2rem;
+  border-radius: 30px;
+  z-index: -10;
+}
+
+.act-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.act-bio {
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.act-bio p {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.act-texto li {
+  font-size:1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.opt {
+display: flex;
+width: 100%;
+height: 4rem;
+border: 1px solid black;
+border-radius: 30px;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+cursor: pointer;
+background-color: #FFC9DB;
+}
+
+.opt:hover {
+  background-color: #C3F1C5;
+}
+
+.pesado {
+  font-weight: 600;
+}
+
+.italico {
+  font-style: italic;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 1000px) {
+  .res-act { /* Corrigido o nome da classe */
+    flex-direction: column; /* Coloca os itens em coluna */
+    height: auto; /* Altura dinâmica no telemóvel */
+    overflow-x: hidden;
+  }
+
+  .act-texto,
+  .act-bio {
+    flex: none; /* Reseta o flex */
+    width: 100%; /* Ocupa toda a largura no telemóvel */
+    padding: 2rem; /* Padding menor para espaços reduzidos */
+    margin: 0; /* Remove margens extras */
+  }
+
+  .act-foto {
+    margin: 1rem 2rem;
+    height: 26vh; /* Ajusta dinamicamente com base na imagem */
+  }
+
+  .act-foto img {
+    width: 100%;
+    height: 26vh; /* Mantém a proporção no telemóvel */
+    max-width: 100%; /* Evita quebra no layout */
+  }
 }
