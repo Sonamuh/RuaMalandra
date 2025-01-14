@@ -396,7 +396,7 @@ details summary::-webkit-details-marker {
 
 #tempo-res{
   width: 100%;
-  height: 5.05rem;
+  height: 6rem;
 }
 
 .info-ultra {
@@ -783,6 +783,11 @@ background-color: #FFC9DB;
   #tempo-res{
     width: 100%;
     height: 10.9rem;
+  }
+
+  .space_tempo {
+  width: 100%;
+  height: 10.9rem;
   }
 
 }
