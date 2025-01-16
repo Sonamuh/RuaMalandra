@@ -615,6 +615,10 @@ details > summary::-webkit-details-marker /* Safari */ {
   margin-bottom: 3rem;
 }
 
+#no-space {
+  margin-bottom: -1px;
+}
+
 .act-texto {
   flex: 3; /* Ocupa 60% no PC */
   justify-content: center;
@@ -679,6 +683,10 @@ background-color: #FFC9DB;
   background-color: #C3F1C5;
 }
 
+#reds2 {
+  margin-bottom: 3rem;
+}
+
 .pesado {
   font-weight: 600;
 }
@@ -712,6 +720,8 @@ background-color: #FFC9DB;
     height: auto; /* Altura dinâmica no telemóvel */
     overflow-x: hidden;
   }
+
+
 
   .act-texto,
   .act-bio {
