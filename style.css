@@ -275,6 +275,10 @@ body {
   background-color:  #C3F1C5;
 }
 
+#abri:hover {
+  background-color:  #FFC9DB;
+}
+
 .event:hover {
   background-color: #C1F1FA;
 }
