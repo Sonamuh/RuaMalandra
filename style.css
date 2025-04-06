@@ -279,6 +279,10 @@ body {
   background-color:  #FFC9DB;
 }
 
+#mai:hover {
+  background-color:  #F9FFCB;
+}
+
 .event:hover {
   background-color: #C1F1FA;
 }
