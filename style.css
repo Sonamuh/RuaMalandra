@@ -502,6 +502,7 @@ details summary::-webkit-details-marker {
 
 #mali{
  background: linear-gradient(168deg,rgba(208, 85, 154, 1) 0%, rgba(255, 225, 72, 1) 50%, rgba(207, 84, 154, 1) 100%);
+font-size: 1rem;
 }
 
 .space_tempo {
